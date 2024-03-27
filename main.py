@@ -4,6 +4,8 @@ from infrastructure.instrument_collection import instrumentCollection
 from simulation.ma_cross import run_ma_sim
 from dateutil import parser 
 from infrastructure.collect_data import run_collection
+from simulation.ema_macd_start import run_ema_macd
+from simulation.ema_macd_mp import run_ema_macd
 
 if __name__=="__main__":
     api = OandaApi()
@@ -20,7 +22,10 @@ if __name__=="__main__":
     # print(api.fetch_candles("EUR_USD", granularity="D", price="MB"))
 
     #instrumentCollection.create_file(api.get_account_instruments(), "./data")
-    # instrumentCollection.load_instruments("./data")
+    instrumentCollection.load_instruments("./data")
     # run_collection(instrumentCollection, api)
     # instrumentCollection.print_intsruments()
-    run_ma_sim()
+    #run_ma_sim()
+    #run_ema_macd(instrumentCollection)
+    run_ema_macd(instrumentCollection)
+
