@@ -1,0 +1,7 @@
+2024-04-04 08:52:26 LogWrapper init() ./logs/GBP_CHF.log
+2024-04-04 08:52:26 {'ma': 20, 'std': 2.5, 'maxspread': 0.0004, 'mingain': 0.0014, 'riskreward': 1.3}
+2024-04-04 08:52:31 CandleManager() init last_candles:last_candle:24-04-04 12:51 is_ready:False
+2024-04-04 08:53:11 CandleManager() new candle:last_candle:24-04-04 12:52 is_ready:True
+2024-04-04 08:54:05 CandleManager() new candle:last_candle:24-04-04 12:53 is_ready:True
+2024-04-04 08:55:08 CandleManager() new candle:last_candle:24-04-04 12:54 is_ready:True
+2024-04-04 08:56:09 CandleManager() new candle:last_candle:24-04-04 12:55 is_ready:True
