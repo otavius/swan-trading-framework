@@ -1,31 +1,4 @@
-2024-04-05 08:57:41 LogWrapper init() ./logs/GBP_JPY.log
-2024-04-05 08:57:41 {'ma': 20, 'std': 2.5, 'maxspread': 0.04, 'mingain': 0.14, 'riskreward': 1.5}
-2024-04-05 08:57:49 CandleManager() init last_candles:last_candle:24-04-05 12:56 is_ready:False
-2024-04-05 08:58:02 CandleManager() new candle:last_candle:24-04-05 12:57 is_ready:True
-2024-04-05 08:58:04 tech_manager: max_rows:40 candle_time2024-04-05 12:57:00+00:00 granularity:M1
-2024-04-05 08:58:04 process_candles:
-       PAIR                      time    mid_c    mid_o          SL        TP  SPREAD      GAIN  SIGNAL
-34  GBP_JPY 2024-04-05 12:53:00+00:00  191.008  190.990    0.000000    0.0000   0.027  0.002333       0
-35  GBP_JPY 2024-04-05 12:54:00+00:00  191.000  191.010    0.000000    0.0000   0.029  0.014033       0
-36  GBP_JPY 2024-04-05 12:55:00+00:00  191.002  190.999    0.000000    0.0000   0.025  0.016217       0
-37  GBP_JPY 2024-04-05 12:56:00+00:00  191.004  191.004    0.000000    0.0000   0.026  0.017667       0
-38  GBP_JPY 2024-04-05 12:57:00+00:00  190.947  191.004  190.897467  191.0213   0.020  0.074300       1
-2024-04-05 08:58:04 Place Trade: TradeDecision(): GBP_JPY dir:1 gain:0.0743 stoploss:190.8975 takeprofit:191.0213
-2024-04-05 08:59:04 CandleManager() new candle:last_candle:24-04-05 12:58 is_ready:True
-2024-04-05 08:59:04 tech_manager: max_rows:40 candle_time2024-04-05 12:58:00+00:00 granularity:M1
-2024-04-05 08:59:04 process_candles:
-       PAIR                      time    mid_c    mid_o          SL        TP  SPREAD      GAIN  SIGNAL
-34  GBP_JPY 2024-04-05 12:54:00+00:00  191.000  191.010    0.000000    0.0000   0.029  0.014033       0
-35  GBP_JPY 2024-04-05 12:55:00+00:00  191.002  190.999    0.000000    0.0000   0.025  0.016217       0
-36  GBP_JPY 2024-04-05 12:56:00+00:00  191.004  191.004    0.000000    0.0000   0.026  0.017667       0
-37  GBP_JPY 2024-04-05 12:57:00+00:00  190.947  191.004  190.897467  191.0213   0.020  0.074300       1
-38  GBP_JPY 2024-04-05 12:58:00+00:00  190.998  190.946    0.000000    0.0000   0.030  0.020333       0
-2024-04-05 09:00:02 CandleManager() new candle:last_candle:24-04-05 12:59 is_ready:True
-2024-04-05 09:00:02 tech_manager: max_rows:40 candle_time2024-04-05 12:59:00+00:00 granularity:M1
-2024-04-05 09:00:02 process_candles:
-       PAIR                      time    mid_c    mid_o          SL        TP  SPREAD      GAIN  SIGNAL
-34  GBP_JPY 2024-04-05 12:55:00+00:00  191.002  190.999    0.000000    0.0000   0.025  0.016217       0
-35  GBP_JPY 2024-04-05 12:56:00+00:00  191.004  191.004    0.000000    0.0000   0.026  0.017667       0
-36  GBP_JPY 2024-04-05 12:57:00+00:00  190.947  191.004  190.897467  191.0213   0.020  0.074300       1
-37  GBP_JPY 2024-04-05 12:58:00+00:00  190.998  190.946    0.000000    0.0000   0.030  0.020333       0
-38  GBP_JPY 2024-04-05 12:59:00+00:00  191.012  191.002    0.000000    0.0000   0.027  0.006167       0
+2024-04-05 12:04:25 LogWrapper init() ./logs/GBP_JPY.log
+2024-04-05 12:04:25 {'ma': 20, 'std': 2.5, 'maxspread': 0.04, 'mingain': 0.14, 'riskreward': 1.5}
+2024-04-05 12:04:31 CandleManager() init last_candles:last_candle:24-04-05 16:03 is_ready:False
+2024-04-05 12:05:03 CandleManager() new candle:last_candle:24-04-05 16:04 is_ready:True

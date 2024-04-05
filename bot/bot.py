@@ -3,6 +3,7 @@ import time
 
 from bot.candle_manager import CandleManager
 from bot.technicals_manager import get_trade_decision
+from bot.trade_manager import place_trade
 from infrastructure.log_wrapper import LogWrapper
 from models.trade_settings import TradeSettings 
 from api.oanda_api import OandaApi
@@ -29,7 +30,8 @@ class Bot:
     def load_settings(self):
         with open("./bot/settings.json", "r") as f: 
             data = json.loads(f.read())
-            self.trade_settings = {k: TradeSettings(v, k) for k, v in data.items()}
+            self.trade_settings = {k: TradeSettings(v, k) for k, v in data["pairs"].items()}
+            self.trade_risk = data["trade_risk"]
         
     def setup_logs(self):
         self.logs = {}
@@ -60,10 +62,16 @@ class Bot:
                     self.log_message(f"Place Trade: {trade_decision}", p)
                     self.log_to_main(f"Place Trade: {trade_decision}")
                     # place trade logic 
+                    place_trade(trade_decision, self.api, self.log_message, self.log_to_error, self.trade_risk)
+                    
         
     def run(self):
         while True:
             time.sleep(Bot.SLEEP)
-            self.process_candles(self.candle_manager.update_timeings())
+            try: 
+                self.process_candles(self.candle_manager.update_timeings())
+            except Exception as error:
+                self.log_to_error(f"CRASH: {error}")
+                break
         
     
