@@ -4,20 +4,34 @@
         "std": 2.5,
         "maxspread": 0.0004,
         "mingain": 0.0014,
-        "riskreward": 1.3
+        "riskreward": 1.5
     },
     "EUR_CHF":{
         "ma": 20, 
         "std": 2.5,
         "maxspread": 0.0004,
         "mingain": 0.0014,
-        "riskreward": 1.3
+        "riskreward": 1.5
     },
     "GBP_JPY":{
         "ma": 20, 
         "std": 2.5,
         "maxspread": 0.04,
         "mingain": 0.14,
-        "riskreward": 1.3
+        "riskreward": 1.5
+    },   
+    "GBP_USD":{
+        "ma": 50, 
+        "std": 2.5,
+        "maxspread": 0.0004,
+        "mingain": 0.0014,
+        "riskreward": 1.5
+    },
+        "EUR_GBP":{
+        "ma": 20, 
+        "std": 2.5,
+        "maxspread": 0.0004,
+        "mingain": 0.0014,
+        "riskreward": 1.5
     }
 }

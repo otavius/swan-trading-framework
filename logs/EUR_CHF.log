@@ -1,7 +1,23 @@
-2024-04-04 08:52:26 LogWrapper init() ./logs/EUR_CHF.log
-2024-04-04 08:52:26 {'ma': 20, 'std': 2.5, 'maxspread': 0.0004, 'mingain': 0.0014, 'riskreward': 1.3}
-2024-04-04 08:52:31 CandleManager() init last_candles:last_candle:24-04-04 12:51 is_ready:False
-2024-04-04 08:53:11 CandleManager() new candle:last_candle:24-04-04 12:52 is_ready:True
-2024-04-04 08:54:05 CandleManager() new candle:last_candle:24-04-04 12:53 is_ready:True
-2024-04-04 08:55:08 CandleManager() new candle:last_candle:24-04-04 12:54 is_ready:True
-2024-04-04 08:56:09 CandleManager() new candle:last_candle:24-04-04 12:55 is_ready:True
+2024-04-05 08:57:41 LogWrapper init() ./logs/EUR_CHF.log
+2024-04-05 08:57:41 {'ma': 20, 'std': 2.5, 'maxspread': 0.0004, 'mingain': 0.0014, 'riskreward': 1.5}
+2024-04-05 08:57:49 CandleManager() init last_candles:last_candle:24-04-05 12:56 is_ready:False
+2024-04-05 08:58:02 CandleManager() new candle:last_candle:24-04-05 12:57 is_ready:True
+2024-04-05 08:58:04 tech_manager: max_rows:40 candle_time2024-04-05 12:57:00+00:00 granularity:M1
+2024-04-05 08:58:04 process_candles:
+       PAIR                      time    mid_c    mid_o        SL        TP   SPREAD      GAIN  SIGNAL
+34  EUR_CHF 2024-04-05 12:53:00+00:00  0.97905  0.97907  0.000000  0.000000  0.00014  0.000158       0
+35  EUR_CHF 2024-04-05 12:54:00+00:00  0.97891  0.97903  0.000000  0.000000  0.00014  0.000272       0
+36  EUR_CHF 2024-04-05 12:55:00+00:00  0.97880  0.97891  0.000000  0.000000  0.00015  0.000360       0
+37  EUR_CHF 2024-04-05 12:56:00+00:00  0.97876  0.97879  0.000000  0.000000  0.00015  0.000379       0
+38  EUR_CHF 2024-04-05 12:57:00+00:00  0.97866  0.97876  0.978354  0.979118  0.00016  0.000458       1
+2024-04-05 08:58:04 Place Trade: TradeDecision(): EUR_CHF dir:1 gain:0.0005 stoploss:0.9784 takeprofit:0.9791
+2024-04-05 08:59:04 CandleManager() new candle:last_candle:24-04-05 12:58 is_ready:True
+2024-04-05 08:59:04 tech_manager: max_rows:40 candle_time2024-04-05 12:58:00+00:00 granularity:M1
+2024-04-05 08:59:04 process_candles:
+       PAIR                      time    mid_c    mid_o        SL        TP   SPREAD      GAIN  SIGNAL
+34  EUR_CHF 2024-04-05 12:54:00+00:00  0.97891  0.97903  0.000000  0.000000  0.00014  0.000272       0
+35  EUR_CHF 2024-04-05 12:55:00+00:00  0.97880  0.97891  0.000000  0.000000  0.00015  0.000360       0
+36  EUR_CHF 2024-04-05 12:56:00+00:00  0.97876  0.97879  0.000000  0.000000  0.00015  0.000379       0
+37  EUR_CHF 2024-04-05 12:57:00+00:00  0.97866  0.97876  0.978354  0.979118  0.00016  0.000458       1
+38  EUR_CHF 2024-04-05 12:58:00+00:00  0.97861  0.97866  0.000000  0.000000  0.00014  0.000482       0
+2024-04-05 09:00:12 CandleManager() new candle:last_candle:24-04-05 12:59 is_ready:True
