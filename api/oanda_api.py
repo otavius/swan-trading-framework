@@ -15,10 +15,7 @@ class OandaApi:
 
     def __init__(self):
         self.session = requests.Session()
-        self.session.headers.update({
-            "Authorization": f"Bearer {id.API_KEY}",
-            "Content-Type": "application/json"
-        })
+        self.session.headers.update(id.SECURE_HEADER)
 
     def make_request(self, url, verb="get", code=200, params=None, data=None, headers=None):
         full_url = f"{id.OANDA_URL}/{url}"

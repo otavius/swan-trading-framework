@@ -6,6 +6,7 @@ from dateutil import parser
 from infrastructure.collect_data import run_collection
 from simulation.ema_macd_start import run_ema_macd
 from simulation.ema_macd_mp import run_ema_macd
+from stream_example.streamer import run_streamer
 
 if __name__=="__main__":
     api = OandaApi()
@@ -27,5 +28,7 @@ if __name__=="__main__":
     # instrumentCollection.print_intsruments()
     #run_ma_sim()
     #run_ema_macd(instrumentCollection)
-    run_ema_macd(instrumentCollection)
+    #run_ema_macd(instrumentCollection)
+    # stream_prices(["GBP_JPY", "GBP_USD"])
+    run_streamer()
 
